@@ -14,9 +14,9 @@ class QuotesState(pc.State):
 def index():
     return pc.vstack(
         pc.heading("Kanye Quotes",color="red",font_weight="bold"),
-        pc.image(src="https://e3.365dm.com/21/10/1600x900/skynews-kanye-west-news_5551306.jpg?20211019035017",)
+        pc.image(src="/kanye.png",height="250px",weight="255px"),
         pc.text(QuotesState.quotes,font_size="16px",color="black",as_="i"),
-        pc.button("Refresh", on_click=QuotesState.getquotes, _hover={"color": "red"}),
+        pc.button("Get Quotes", on_click=QuotesState.getquotes, _hover={"color": "red"}),
     )
 
 
