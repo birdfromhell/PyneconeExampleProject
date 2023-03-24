@@ -1,1 +1,1 @@
-web: pc init && pc run --env prod
+web: pip install pynecone && pc init && pc run --env prod
